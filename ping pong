@@ -54,15 +54,34 @@ function draw(){
     yBolinha +raio > yRaquete ){
     velocidadeXBolinha *= -1;
     raquetada.play()}
-    
+
   if(xBolinha + raio > xRaqueteOponente &
     yBolinha - raio < yRaqueteOponente + 90 &
     yBolinha + raio > yRaqueteOponente) {
     velocidadeXBolinha *= -1;
     raquetada.play()}
+
+    textSise(18);
+    textAlign(CENTER);
+    Fill(color(255,0,233));
+    rect(150,10,40,20);
+    Fill(255);
+    text(meusPontos 170,26);
+    Fill(color(255,0,233));
+    rect(450,10,40,20);
+    fill(255);
+    text(pontosOponente,470,26);
+
+    if(xBolinha>595){
+      meusPontos += 1;
+      ponto.play();
+    }
+    if(xBolinha< 10){
+      pontosOponente +=1;
+      ponto.play();
+    }
+
 }
-
-
 
 function movimentoBolinha(){
   circle(xBolinha, yBolinha,diametro);
