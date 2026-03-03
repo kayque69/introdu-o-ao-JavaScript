@@ -20,7 +20,6 @@ let yRaqueteOponente = 150;
 let meusPontos = 0;
 let pontosOponente = 0;
 
-
 // dificudade
 
 let dificudade = "normal";
@@ -31,7 +30,6 @@ function preload(){
   ponto =loadSound("ponto.mp3")
   raquetada = loadSound("raquetada.mp3")
 }
-
 
 function setup ( ){
     createCarnas(600,400)
@@ -56,6 +54,7 @@ function draw(){
     yBolinha +raio > yRaquete ){
     velocidadeXBolinha *= -1;
     raquetada.play()}
+    
   if(xBolinha + raio > xRaqueteOponente &
     yBolinha - raio < yRaqueteOponente + 90 &
     yBolinha + raio > yRaqueteOponente) {
