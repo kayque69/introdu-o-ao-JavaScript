@@ -107,8 +107,8 @@ function npc(){
     nivel = 100;
   }
   if(dificudade ==="normal"){
-    nivel = 30
+    nivel = 30;
   }
   let velocidadeYRaqueteOponente =  yBolinha - yRaqueteOponente - 10 /2;
-  yRaqueteOponente += velocidadeYRaqueteOponente - nivel
+  yRaqueteOponente += velocidadeYRaqueteOponente - nivel;
 }
